@@ -15,6 +15,11 @@ tar -zxvf arm-openlitespeed.tar.gz
 cd arm-openlitespeed
 
 
+./build.sh
+
+
+./install.sh
+
 
 wget https://raw.githubusercontent.com/Steady-WJ/arm_openlitespeed/main/arm-php5.6.35.tar.gz
  
