@@ -38,13 +38,21 @@ make && make install
 
 
 cd /usr/local/lsws/admin/fcgi-bin/
+
 rm -rf admin_php
+
 cp /usr/local/bin/lsphp /usr/local/lsws/admin/fcgi-bin/admin_php
+
 rm -rf /usr/local/lsws/fcgi-bin/lsphp*
+
 cp /usr/local/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp
+
 cp /usr/local/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5
+
 cd /usr/local/lsws/admin/misc
+
 bash admpass.sh
+
 systemctl restart lsws
  
  
