@@ -2,6 +2,8 @@
  
  
 #安装编译环境
+
+
 apt install build-essential autoconf libtool bison re2c pkg-config libssl-dev libbz2-dev libcurl4-openssl-dev libffi-dev libzip-dev libpng-dev libjpeg-dev libwebp-dev libavif-dev libgmp-dev libc-client-dev libkrb5-dev libldap2-dev libonig-dev libreadline-dev libsodium-dev libxml2-dev libsqlite3-dev -y
 
  
@@ -50,6 +52,8 @@ cd php-5.6.35
 make -j 4&&make install
 
 
+
+#
 
 cd /usr/local/lsws/admin/fcgi-bin/
 
