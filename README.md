@@ -21,6 +21,21 @@ cd openlitespeed-1.7.16
 ./install.sh
 
 
+
+ 
+wget https://github.com/libexpat/libexpat/releases/download/R_2_5_0/expat-2.5.0.tar.gz
+
+tar -zxvf expat-2.5.0.tar.gz
+
+cd expat-2.5.0
+
+./configure --prefix=/usr/local/expat
+
+make -j 4&&make install
+
+cd /usr/local/lsws/phpbuild/
+
+
 wget https://raw.githubusercontent.com/Steady-WJ/arm_openlitespeed/main/arm-php5.6.35.tar.gz
  
  
@@ -28,14 +43,9 @@ tar -zxvf arm-php5.6.35.tar.gz
  
  
 cd php-5.6.35
- 
- 
- 
-cp /usr/lib/aarch64-linux-gnu/libexpat* /lib/
 
 
-
-./configure --with-config-file-path=../conf --disable-all --with-litespeed --enable-session --enable-posix --enable-xml --with-libexpat-dir=/lib/ --with-zlib --enable-sockets --enable-bcmath --enable-json
+./configure --prefix=/tmp --disable-all --with-litespeed --enable-session --enable-posix --enable-xml --with-libexpat-dir=/usr/local/expat --with-zlib --enable-sockets --enable-bcmath --enable-json
 
 make -j 4&&make install
 
