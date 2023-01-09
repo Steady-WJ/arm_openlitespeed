@@ -1,11 +1,12 @@
 # arm_openlitespeed
  
  
-
+#安装编译环境
 apt install build-essential autoconf libtool bison re2c pkg-config libssl-dev libbz2-dev libcurl4-openssl-dev libffi-dev libzip-dev libpng-dev libjpeg-dev libwebp-dev libavif-dev libgmp-dev libc-client-dev libkrb5-dev libldap2-dev libonig-dev libreadline-dev libsodium-dev libxml2-dev libsqlite3-dev -y
 
  
- 
+#下载arm-openlitespeed并安装
+
 wget https://raw.githubusercontent.com/Steady-WJ/arm_openlitespeed/main/arm-openlitespeed.tar.gz
 
 
@@ -15,13 +16,10 @@ tar -zxvf arm-openlitespeed.tar.gz
 cd openlitespeed-1.7.16
 
 
-./build.sh
-
-
 ./install.sh
 
 
-
+#安装编译expat
  
 wget https://github.com/libexpat/libexpat/releases/download/R_2_5_0/expat-2.5.0.tar.gz
 
@@ -32,6 +30,8 @@ cd expat-2.5.0
 ./configure --prefix=/usr/local/expat
 
 make -j 4&&make install
+
+#安装PHP
 
 cd /usr/local/lsws/phpbuild/
 
