@@ -1,4 +1,4 @@
-form https://lowendtalk.com/discussion/181468/how-to-compile-and-install-openlitespeed-in-oracle-arm-a1-instance/p1
+借鉴自 https://lowendtalk.com/discussion/181468/how-to-compile-and-install-openlitespeed-in-oracle-arm-a1-instance/p1
 
 # arm_openlitespeed
  
